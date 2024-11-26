@@ -1,0 +1,70 @@
+@use '../variables'
+@use '../mixins'
+    
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+    .technology-card
+        @include mixins.center
+        gap: 1rem
+        padding: 1rem
+        border: 1px solid #333
+        width: 45%
+        border-radius: variables.$card-border-radius 
+
+        h3
+            color: variables.$text-color
+            margin-bottom: 1rem
+
+        svg
+            font-size: 6rem
+        &:hover 
+            transform: scale(1.05)// Aumenta ligeiramente o tamanho
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)// Adiciona uma sombra
+            border-color:  #6F42C1
+
+    #html
+        svg
+            color: #E44D26
+
+    #css
+        svg
+            color: #1572B6
+
+    #js
+        svg
+            color: #F0DB4F
+
+    #node
+        svg
+            color: #ffd342
+
+    #mysql
+        svg
+            color: #00618A
+
+    #react
+        svg
+            color: #61DAFB
+    
+    #docker
+        svg
+            color: #1e63ee
+
+    #node
+        svg
+            color: #6bb361
+    
+    #sass
+        svg
+            color: #c76494
+    
+    #figma
+        svg
+            color: #9d56f7
+    

@@ -5,9 +5,9 @@ const ProjectsContainer = () => {
     <section className="projects-container">
       <Projetos />
 
-      <a href="#" className="btn">
+      {/*<a href="#" className="btn">
         Ver Projetos
-      </a>
+      </a>*/}
     </section>
   );
 };

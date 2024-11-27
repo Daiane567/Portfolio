@@ -9,19 +9,14 @@ import Biblioteca2 from "../img/biblioteca2.png";
 import Biblioteca3 from "../img/biblioteca3.png";
 import Biblioteca4 from "../img/biblioteca4.png";
 import Biblioteca5 from "../img/biblioteca5.png";
-import Reciclacapa from "../img/reciclacapa1.png";
+import Reciclacapa from "../img/reciclacapa7.png";
 import Recicla5 from "../img/recicla5.png";
-
-
-
-
 
 
 const cards = [
   { id: 1, title: "Reciclagem", description: "", images: [Reciclacapa, Card1Img, Card2Img, Recicla3, Recicla5] },
   { id: 2, title: "Gamer", description: "", images: [Card3Img, Card3Img, Card4Img] },
   { id: 3, title: "Biblioteca", description: "", images: [Biblioteca1, Biblioteca2, Biblioteca3, Biblioteca4, Biblioteca5] },
-  { id: 4, title: "Card 4", description: "Descrição do card 4", images: [Card4Img, Card1Img, Card2Img] },
 ];
 
 import { useState } from "react";

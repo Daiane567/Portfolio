@@ -1,16 +1,36 @@
 @use '../variables'
 
 #portfolio
-    display: flex
-    flex-wrap: wrap
-    padding: 3rem
-    gap: 3rem
+  display: flex
+  flex-wrap: wrap
+  padding: 3rem
+  gap: 3rem
 
-    h1
-        width: 100%
-        color: variables.$text-color
-        font-size: 5rem
-        margin-bottom: 4rem
-        background: variables.$gradient
-        -webkit-background-clip: text
-        -webkit-text-fill-color: transparent
+  h1
+    width: 100%
+    color: variables.$text-color
+    font-size: 5rem
+    margin-bottom: 4rem
+    background: variables.$gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+    // Media queries para tornar o título responsivo
+    @media (max-width: 1200px) 
+      font-size: 4rem
+      margin-bottom: 3rem
+
+    @media (max-width: 768px) 
+      font-size: 3rem
+      margin-bottom: 2rem
+
+    @media (max-width: 480px) 
+      font-size: 2rem
+      margin-bottom: 1.5rem
+      text-align: center // Ajuste para centralizar o texto em telas menores
+
+  // Responsividade para o layout do portfolio
+  @media (max-width: 768px)
+    #portfolio
+      flex-direction: column
+      align-items: center
